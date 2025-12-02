@@ -1,0 +1,5 @@
+id: ahammer3-umbrel-test
+name: Custom Store
+version: "1.0.0"
+apps:
+  - whisper
