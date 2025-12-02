@@ -1,0 +1,27 @@
+id: whisper
+name: Whisper STT
+version: "1.0.0"
+tagline: "Local speech-to-text (offline) using Faster-Whisper"
+icon: https://raw.githubusercontent.com/ggerganov/whisper.cpp/master/docs/whisper-logo.png
+
+description: |
+  Fully offline speech-to-text using Faster-Whisper, running locally on your Umbrel.
+  Provides an HTTP API for real-time transcription, ideal for sending microphone audio
+  to your local LLM or voice assistant.
+
+developer: Local
+website: https://github.com/guillaumekln/faster-whisper
+submitter: You
+repo: ""
+support: "https://github.com/guillaumekln/faster-whisper/issues"
+gallery:
+  - https://raw.githubusercontent.com/ggerganov/whisper.cpp/master/docs/whisper-logo.png
+
+port: 9001
+path: /
+detached: false
+
+volumes:
+  - data:/data
+
+dependencies: []

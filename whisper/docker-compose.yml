@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  whisper:
+    image: ghcr.io/guillaumekln/faster-whisper-server:latest
+    container_name: whisper
+    restart: unless-stopped
+    ports:
+      - "9001:9000"
+    command: >
+      --model small
+      --device cpu
+      --compute-type int8
+      --host 0.0.0.0
+      --port 9000
+    volumes:
+      - data:/data
+
+volumes:
+  data:
