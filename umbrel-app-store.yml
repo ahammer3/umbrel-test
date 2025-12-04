@@ -1,5 +1,5 @@
-id: ahammer3-umbrel-test
-name: Custom Store
+id: "ahammer3"
+name: "Allan's Umbrel Test Store"
 version: "1.0.0"
 apps:
-  - whisper
+  - "ahammer3-whisper"

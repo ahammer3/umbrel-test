@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      # <app-id>_<service-name>_1
+      # here: ahammer3-whisper_server_1
+      APP_HOST: ahammer3-whisper_server_1
+      APP_PORT: 9000
+      # Disable Umbrel auth prompt for this app; it's just an API.
+      PROXY_AUTH_ADD: "false"
+
+  server:
+    image: ghcr.io/guillaumekln/faster-whisper-server:latest
+    restart: unless-stopped
+    stop_grace_period: 1m
+    command: >
+      --model small
+      --device cpu
+      --compute-type int8
+      --host 0.0.0.0
+      --port 9000
+    volumes:
+      # Umbrel will mount this to /data/app-data/ahammer3-whisper by default
+      - ${APP_DATA_DIR}/models:/models

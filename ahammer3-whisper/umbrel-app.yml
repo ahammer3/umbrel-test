@@ -1,0 +1,23 @@
+manifestVersion: 1
+id: ahammer3-whisper
+category: ai
+name: Whisper STT
+version: "1.0.0"
+tagline: Offline speech-to-text using Faster-Whisper
+description: >-
+  Local offline speech-to-text using Faster-Whisper.
+  Exposes a simple HTTP API for transcription that you can call from your
+  Jarvis-style assistant or other apps on your Umbrel.
+releaseNotes: ""
+developer: Allan Hammer
+website: https://github.com/ahammer3/umbrel-test
+dependencies: []
+repo: https://github.com/ahammer3/umbrel-test
+support: https://github.com/ahammer3/umbrel-test/issues
+port: 9001
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: Allan Hammer
+submission: ""
