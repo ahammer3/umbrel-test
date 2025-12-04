@@ -1,23 +1,14 @@
 manifestVersion: 1
 id: ahammer3-whisper
-category: ai
-name: Whisper STT
-version: "1.0.0"
-tagline: Offline speech-to-text using Faster-Whisper
+category: automation
+name: Whisper (test)
+version: "0.1.0"
+tagline: Local Whisper speech-to-text test app
 description: >-
-  Local offline speech-to-text using Faster-Whisper.
-  Exposes a simple HTTP API for transcription that you can call from your
-  Jarvis-style assistant or other apps on your Umbrel.
-releaseNotes: ""
+  Simple test app to verify a custom Umbrel app and community app store.
+  Once this is working, we can swap the container for a real Whisper server.
 developer: Allan Hammer
 website: https://github.com/ahammer3/umbrel-test
-dependencies: []
 repo: https://github.com/ahammer3/umbrel-test
 support: https://github.com/ahammer3/umbrel-test/issues
-port: 9001
-gallery: []
-path: ""
-defaultUsername: ""
-defaultPassword: ""
-submitter: Allan Hammer
-submission: ""
+port: 80

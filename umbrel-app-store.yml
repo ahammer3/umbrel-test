@@ -1,5 +1,2 @@
-id: "ahammer3"
-name: "Allan's Umbrel Test Store"
-version: "1.0.0"
-apps:
-  - "ahammer3-whisper"
+id: ahammer3
+name: Allan's App Store
